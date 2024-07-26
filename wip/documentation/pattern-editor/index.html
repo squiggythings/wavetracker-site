@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Pattern Editor - WaveTracker</title>
             <base href="../" />
@@ -35,24 +34,28 @@
                 <h1 class="topic">Pattern Editor</h1>
                 <hr />
                 <br />
-                <p>The frame editor will likely be where you'll spend most of the time in WaveTracker. It is where you
-                    can create patterns for each channel.</p>
-                <img src="pattern-editor/frame_editor.png" title="The frame editor, showing channels 1 through 12"
+                <p>
+                    The pattern editor is likely where you'll spend most of the time in WaveTracker. It is where you can
+                    create patterns for each frame.
+                </p>
+                <img
+                    src="pattern-editor/frame_editor.png"
+                    title="The frame editor, showing channels 1 through 12"
                     alt="The frame editor, showing channels 1 through 12" />
                 <p>
                     The frame editor consists of all 24 channels in a song. Only 12 are visible at one time. Using
-                    ALT+Scroll or the scrollbar at the bottom
-                    will bring the other channels into view.
+                    ALT+Scroll or the scrollbar at the bottom will bring the other channels into view.
                 </p>
                 <p>Each channel has the following layout:</p>
-                <img src="pattern-editor/frame_editor_columns.png"
+                <img
+                    src="pattern-editor/frame_editor_columns.png"
                     title="A closer look at what the columns mean in each channel."
                     alt="A zoom in showing 4 labelled columns for one channel. The first column is for the note/octave, the second is to set the instrument, the third is for volume, the fourth is for effects" />
 
                 <p>
                     Each channel has 4 columns that can hold instructions for it. The application must be in record mode
-                    (The cursor row must be red instead of
-                    blue. Pressing space toggles this) in order to input information in these fields.
+                    (The cursor row must be red instead of blue. Pressing space toggles this) in order to input
+                    information in these fields.
                 </p>
                 <ul>
                     <li>
@@ -63,12 +66,13 @@
                         <li>Note-cuts immediately end the note with an abrupt stop, the volume will jump to 0.</li>
                         <li>
                             Note-releases will trigger the release sequences of the instrument, if it has any. This can
-                            be used to make softer sounding releases
-                            that aren't so abrupt.
+                            be used to make softer sounding releases that aren't so abrupt.
                         </li>
                     </ul>
                     <p>Notes are input using a piano-qwerty keyboard layout, illustrated below.</p>
-                    <img src="pattern-editor/keyboard.png" title="Keyboard-map of inputting notes in WaveTracker"
+                    <img
+                        src="pattern-editor/keyboard.png"
+                        title="Keyboard-map of inputting notes in WaveTracker"
                         alt="Keyboard-map of inputting notes in WaveTracker" />
 
                     <br />
@@ -84,38 +88,39 @@
                         </li>
                     </ul>
                     <br />
-                    <li><span style="font-weight: bold">Volume Column</span> <br />Sets the channel volume as a
-                        percentage from 00-99.</li>
+                    <li
+                        ><span style="font-weight: bold">Volume Column</span> <br />Sets the channel volume as a
+                        percentage from 00-99.</li
+                    >
                     <br />
                     <li>
                         <span style="font-weight: bold">Effects Column</span>
                         <br />Sets channel effects. The format is Yxx, where Y is the effect type and xx is the
-                        parameter. Note that effects will stay on until
-                        you turn them off, to avoid cluttering up the column.
+                        parameter. Note that effects will stay on until you turn them off, to avoid cluttering up the
+                        column.
                         <br />
                         See <a href="effect-list/">the full list of effects</a> for more information.
                     </li>
                 </ul>
 
-                <p>Pressing insert or delete will insert or delete rows, respectively. Pressing backspace will remove
-                    the previous row.</p>
+                <p
+                    >Pressing insert or delete will insert or delete rows, respectively. Pressing backspace will remove
+                    the previous row.</p
+                >
                 <p>
                     Channels can be muted or unmuted by clicking their headers. Double clicking a channel will solo it,
-                    and clicking on the leftmost part of the
-                    header will unmute all channels.
+                    and clicking on the leftmost part of the header will unmute all channels.
                 </p>
                 <p>The cursor can be moved by either clicking a new location, or using the arrow keys.</p>
                 <p>Selections can be done by either clicking or dragging, or holding shift and moving the cursor.</p>
                 <p>See <a href="keyboard-shortcuts/">keyboard shortcuts</a> for additional keyboard commands.</p>
-                <<footer>
+                <footer>
                     <hr />
                     WaveTracker is an open source music software by Elias Ananiadis &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
-                    </footer>
+                </footer>
             </article>
         </body>
-
     </html>
-
 </html>

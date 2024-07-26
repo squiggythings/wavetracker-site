@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Preferences - WaveTracker</title>
             <base href="../" />
@@ -27,7 +26,7 @@
                     <a class="selected" href="preferences/"> <li>Preferences</li> </a>
                     <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
                     <li> <h2>Reference</h2> </li>
-                    <a  href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
+                    <a href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
                     <a href="effect-list/"> <li>Effect List</li> </a>
                 </ul>
             </aside>
@@ -35,8 +34,10 @@
                 <h1 class="topic">Preferences</h1>
                 <hr />
                 <br />
-                <p class="text">The preferences window can be accessed through the toolbar or through Edit > Preferences. This is where you can change settings that control
-                    the application's behavior.</p>
+                <p class="text"
+                    >The preferences window can be accessed through the toolbar or through Edit > Preferences. This is
+                    where you can change settings that control the application's behavior.</p
+                >
                 <h2>General</h2>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
@@ -57,18 +58,16 @@
                         <td style="padding-left: 20px">Oscilloscope mode</td>
                         <td>
                             Determines the look of the oscilloscope in the song panel. <br />Mono: Displays a single
-                            oscilloscope<br />Stereo-split: Displays
-                            two oscilloscopes for the left and right channels respectively <br />Stereo-overlap:
-                            Displays a single oscilloscope with the left
-                            and right channels overlapped on each other, highlighting the difference between them
+                            oscilloscope<br />Stereo-split: Displays two oscilloscopes for the left and right channels
+                            respectively <br />Stereo-overlap: Displays a single oscilloscope with the left and right
+                            channels overlapped on each other, highlighting the difference between them
                         </td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Meter decay rate</td>
                         <td>
                             Determines how responsive the volume meters in the song panel are. Fast is bouncier but not
-                            very consistent; slow is more consistent
-                            but less responsive.
+                            very consistent; slow is more consistent but less responsive.
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +79,9 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Flash meter red when clipping</td>
-                        <td>If this option is enabled, the volume meters will turn red whenever the signal is above 0db.
+                        <td
+                            >If this option is enabled, the volume meters will turn red whenever the signal is above
+                            0db.
                         </td>
                     </tr>
                 </table>
@@ -148,16 +149,22 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Ignore step when moving</td>
-                        <td>Ignore the step value in edit settings when moving the cursor. Only use it when inputting values</td>
+                        <td
+                            >Ignore the step value in edit settings when moving the cursor. Only use it when inputting
+                            values</td
+                        >
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Step after numeric input</td>
                         <td>
-                            Defines cursor movement behavior when inputting numbers.<br/>
-                            Always: Cursor always steps. This behaves like FastTracker or Famitracker<br/>
-                            At the end of a cell: Both digits of a column have to be typed before the cursor steps down. This behaves like ImpulseTracker<br/>
-                            After cell, including effect: Same as the above except effects are treated as a single 3 digit column.<br/>
-                            Never: The cursor never steps down automatically. Must click into new cells manually. This behaves like ModplugTracker.
+                            Defines cursor movement behavior when inputting numbers.<br />
+                            Always: Cursor always steps. This behaves like FastTracker or Famitracker<br />
+                            At the end of a cell: Both digits of a column have to be typed before the cursor steps down.
+                            This behaves like ImpulseTracker<br />
+                            After cell, including effect: Same as the above except effects are treated as a single 3
+                            digit column.<br />
+                            Never: The cursor never steps down automatically. Must click into new cells manually. This
+                            behaves like ModplugTracker.
                         </td>
                     </tr>
                     <tr>
@@ -231,7 +238,10 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Input device</td>
-                        <td>The MIDI device to receive inputs from, connect a MIDI device and select it here to begin using MIDI input.</td>
+                        <td
+                            >The MIDI device to receive inputs from, connect a MIDI device and select it here to begin
+                            using MIDI input.</td
+                        >
                     </tr>
                     <tr>
                         <td style="font-weight: bold; border-right: 0px">Transpose</td>
@@ -249,15 +259,24 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Record note velocity</td>
-                        <td>If this is enabled, the velocity of a note press in edit mode will be recorded in the volume column</td>
+                        <td
+                            >If this is enabled, the velocity of a note press in edit mode will be recorded in the
+                            volume column</td
+                        >
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Use program change to select instrument</td>
-                        <td>If this is enabled, a midi controller with program change functionality can be used to select instruments</td>
+                        <td
+                            >If this is enabled, a midi controller with program change functionality can be used to
+                            select instruments</td
+                        >
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Receive play/stop messages</td>
-                        <td>If this is enabled, a midi controller with PLAY/STOP buttons will control tracker playback</td>
+                        <td
+                            >If this is enabled, a midi controller with PLAY/STOP buttons will control tracker
+                            playback</td
+                        >
                     </tr>
                 </table>
 
@@ -288,7 +307,10 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Oversampling</td>
-                        <td>Higher values will reduce high frequency aliasing artefacts, at the expense of higher CPU usage. Turn this down if audio is stuttering</td>
+                        <td
+                            >Higher values will reduce high frequency aliasing artefacts, at the expense of higher CPU
+                            usage. Turn this down if audio is stuttering</td
+                        >
                     </tr>
                 </table>
 
@@ -327,7 +349,10 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Colorful waves</td>
-                        <td>If this is enabled, each oscilloscope window will use the same color as their notes in the piano roll</td>
+                        <td
+                            >If this is enabled, each oscilloscope window will use the same color as their notes in the
+                            piano roll</td
+                        >
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Wave thickness</td>
@@ -354,12 +379,11 @@
 
                 <footer>
                     <hr />
-                    WaveTracker is Copyright © 2024 Elias Ananiadis &middot; <a
-                        href="https://eliasananiadis.com">Personal site</a>
+                    WaveTracker is an open source music software by Elias Ananiadis &middot;
+                    <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
+                    <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>
             </article>
         </body>
-
     </html>
-
 </html>
