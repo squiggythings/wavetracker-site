@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Shortcuts - WaveTracker</title>
             <base href="../" />
@@ -13,30 +12,32 @@
         <body>
             <aside>
                 <ul class="sideNav">
-                    <li> <h2>General</h2> </li>
-                    <a href=""> <li>Overview</li> </a>
-                    <li> <h2>Interface</h2> </li>
+                    <li><h2>General</h2></li>
+                    <a href=""><li>Overview</li></a>
+                    <li><h2>Interface</h2></li>
                     <a href="toolbar/"><li>Toolbar</li></a>
-                    <a href="song-panel/"><li>Song Panel</li></a>
-                    <a href="edit-settings/"> <li>Edit Settings</li> </a>
-                    <a href="frames-panel/"> <li>Frames Panel</li> </a>
-                    <a href="wave-bank/"> <li>Wave Bank</li> </a>
-                    <a href="instrument-bank/"> <li>Instrument Bank</li> </a>
-                    <a href="instrument-editor/"> <li>Instrument Editor</li> </a>
-                    <a href="pattern-editor/"> <li>Pattern Editor</li> </a>
-                    <a href="preferences/"> <li>Preferences</li> </a>
-                    <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
-                    <li> <h2>Reference</h2> </li>
-                    <a class="selected" href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
-                    <a href="effect-list/"> <li>Effect List</li> </a>
+                    <a href="module-panel/"><li>Module Panel</li></a>
+                    <a href="edit-settings/"><li>Edit Settings</li></a>
+                    <a href="frames-panel/"><li>Frames Panel</li></a>
+                    <a href="wave-bank/"><li>Wave Bank</li></a>
+                    <a href="instrument-bank/"><li>Instrument Bank</li></a>
+                    <a href="instrument-editor/"><li>Instrument Editor</li></a>
+                    <a href="pattern-editor/"><li>Pattern Editor</li></a>
+                    <a href="preferences/"><li>Preferences</li></a>
+                    <a href="visualizer-mode/"><li>Visualizer Mode</li></a>
+                    <li><h2>Reference</h2></li>
+                    <a class="selected" href="keyboard-shortcuts/"><li>Keyboard Shortcuts</li></a>
+                    <a href="effect-list/"><li>Effect List</li></a>
                 </ul>
             </aside>
             <article>
                 <h1 class="topic">Keyboard Shortcuts</h1>
                 <hr />
                 <br />
-                <p class="text">These are all the keyboard shortcuts available in WaveTracker, most can be rebound in <a
-                        href="preferences/">Preferences</a></p>
+                <p class="text">
+                    These are all the keyboard shortcuts available in WaveTracker, most can be rebound in
+                    <a href="preferences/">Preferences</a>
+                </p>
                 <h2>General</h2>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
@@ -44,56 +45,68 @@
                         <th>Action</th>
                     </tr>
                     <tr>
-                        <td>Alt+F4</td>
-                        <td>Exit</td>
+                        <td>]</td>
+                        <td>Increase Octave</td>
                     </tr>
                     <tr>
-                        <td>Ctrl+N</td>
-                        <td>Create a new file</td>
+                        <td>[</td>
+                        <td>Decrease Octave</td>
                     </tr>
                     <tr>
-                        <td>Ctrl+O</td>
-                        <td>Open file</td>
-                    </tr>
-                    <tr>
-                        <td>Ctrl+S</td>
-                        <td>Save file</td>
-                    </tr>
-                    <tr>
-                        <td>Ctrl+E</td>
-                        <td>Open export dialog</td>
-                    </tr>
-                    <tr>
-                        <td>Return</td>
-                        <td>Play / stop</td>
-                    </tr>
-                    <tr>
-                        <td>Alt+Return</td>
-                        <td>Play from cursor</td>
-                    </tr>
-                    <tr>
-                        <td>Ctrl+Return</td>
-                        <td>Play row</td>
+                        <td>Enter</td>
+                        <td>Play/Stop</td>
                     </tr>
                     <tr>
                         <td>F5</td>
-                        <td>Play from start</td>
+                        <td>Play from beginning</td>
                     </tr>
                     <tr>
-                        <td>F7</td>
+                        <td>Alt+Enter</td>
                         <td>Play from cursor</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Enter</td>
+                        <td>Play row</td>
                     </tr>
                     <tr>
                         <td>F8</td>
                         <td>Stop</td>
                     </tr>
                     <tr>
-                        <td>F2 - F9</td>
-                        <td>Select octave 0 - 7, if no other keys are configured.</td>
+                        <td>Space</td>
+                        <td>Toggle edit mode</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Down</td>
+                        <td>Next instrument</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Up</td>
+                        <td>Previous instrument</td>
+                    </tr>
+                    <tr>
+                        <td>Scroll lock</td>
+                        <td>Follow mode</td>
+                    </tr>
+                    <tr>
+                        <td>Alt+P</td>
+                        <td>Module settings</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+W</td>
+                        <td>Edit wave</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+I</td>
+                        <td>Edit instrument</td>
+                    </tr>
+                    <tr>
+                        <td>Alt+V</td>
+                        <td>Toggle visualizer</td>
                     </tr>
                     <tr>
                         <td>Alt+F9</td>
-                        <td>Mute/Unmute channel</td>
+                        <td>Toggle channel</td>
                     </tr>
                     <tr>
                         <td>Alt+F10</td>
@@ -101,11 +114,147 @@
                     </tr>
                     <tr>
                         <td>F12</td>
-                        <td>Kill sound and reload sound configuration</td>
+                        <td>Reset audio</td>
                     </tr>
                 </table>
                 <br />
-                <h2>Pattern Editor</h2>
+                <h2>Frame</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 125px">Key</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Left</td>
+                        <td>Previous frame</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Right</td>
+                        <td>Next frame</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+D</td>
+                        <td>Duplicate frame</td>
+                    </tr>
+                </table>
+                <br />
+                <h2>Edit</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 125px">Key</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Z</td>
+                        <td>Undo</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Y</td>
+                        <td>Redo</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+X</td>
+                        <td>Cut</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+C</td>
+                        <td>Copy</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+V</td>
+                        <td>Paste</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+M</td>
+                        <td>Paste and mix</td>
+                    </tr>
+                    <tr>
+                        <td>Backspace</td>
+                        <td>Delete the row above</td>
+                    </tr>
+                    <tr>
+                        <td>Insert</td>
+                        <td>Insert empty row</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>Delete cell</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+A</td>
+                        <td>Select all</td>
+                    </tr>
+                    <tr>
+                        <td>Escape</td>
+                        <td>Deselect</td>
+                    </tr>
+                </table>
+                <br />
+                <h2>Pattern</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 125px">Key</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+G</td>
+                        <td>Interpolate</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+R</td>
+                        <td>Reverse</td>
+                    </tr>
+                    <tr>
+                        <td>Alt+S</td>
+                        <td>Replace instrument</td>
+                    </tr>
+                    <tr>
+                        <td>Alt+H</td>
+                        <td>Humanize volumes</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+F1</td>
+                        <td>Transpose: note down</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+F2</td>
+                        <td>Transpose: note up</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+F3</td>
+                        <td>Transpose: octave down</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+F4</td>
+                        <td>Transpose: octave up</td>
+                    </tr>
+                    <tr>
+                        <td>Shift+F1</td>
+                        <td>Decrease values</td>
+                    </tr>
+                    <tr>
+                        <td>Shift+F2</td>
+                        <td>Increase values</td>
+                    </tr>
+                    <tr>
+                        <td>Shift+F3</td>
+                        <td>Coarse decrease values</td>
+                    </tr>
+                    <tr>
+                        <td>Shift+F4</td>
+                        <td>Coarse increase values</td>
+                    </tr>
+                    <tr>
+                        <td>Home</td>
+                        <td>Jump to top of frame</td>
+                    </tr>
+                    <tr>
+                        <td>End</td>
+                        <td>Jump to bottom of frame</td>
+                    </tr>
+                </table>
+                <br />
+                <!-- <h2>Pattern Editor</h2>
 
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
@@ -225,20 +374,12 @@
                         <td>Duplicate frame</td>
                     </tr>
                     <tr>
-                        <td>Tab / Alt+Left / Alt+Scroll</td>
+                        <td>Tab / Alt+Left</td>
                         <td>Move to next channel</td>
                     </tr>
                     <tr>
-                        <td>Shift+Tab / Alt+Right / Alt+Scroll</td>
+                        <td>Shift+Tab / Alt+Right</td>
                         <td>Move to previous channel</td>
-                    </tr>
-                    <tr>
-                        <td>Numpad 0-9</td>
-                        <td>Select instrument 0 - 9</td>
-                    </tr>
-                    <tr>
-                        <td>Alt+Numpad 0-9</td>
-                        <td>Set step size, 0 - 9</td>
                     </tr>
                     <tr>
                         <td>[</td>
@@ -256,17 +397,15 @@
                         <td>Ctrl+Down</td>
                         <td>Previous instrument</td>
                     </tr>
-                </table>
-                <br/>
+                </table> -->
+                <br />
                 <footer>
                     <hr />
-                    WaveTracker is an open source music software by Elias Ananiadis &middot;
+                    WaveTracker is Copyright © 2024 squiggythings &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>
             </article>
         </body>
-
     </html>
-
 </html>

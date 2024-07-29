@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Effect List - WaveTracker</title>
             <base href="../" />
@@ -13,11 +12,11 @@
         <body>
             <aside>
                 <ul class="sideNav">
-                    <li> <h2>General</h2> </li>
+                    <li><h2>General</h2></li>
                     <a href=""> <li>Overview</li> </a>
-                    <li> <h2>Interface</h2> </li>
+                    <li><h2>Interface</h2></li>
                     <a href="toolbar/"><li>Toolbar</li></a>
-                    <a href="song-panel/"><li>Song Panel</li></a>
+                    <a href="module-panel/"><li>Module Panel</li></a>
                     <a href="edit-settings/"> <li>Edit Settings</li> </a>
                     <a href="frames-panel/"> <li>Frames Panel</li> </a>
                     <a href="wave-bank/"> <li>Wave Bank</li> </a>
@@ -26,7 +25,7 @@
                     <a href="pattern-editor/"> <li>Pattern Editor</li> </a>
                     <a href="preferences/"> <li>Preferences</li> </a>
                     <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
-                    <li> <h2>Reference</h2> </li>
+                    <li><h2>Reference</h2></li>
                     <a href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
                     <a class="selected" href="effect-list/"> <li>Effect List</li> </a>
                 </ul>
@@ -38,9 +37,8 @@
                 <p>Effects are the fourth column of each channel, used to modify notes currently played.</p>
                 <p>
                     Each effect is followed by a parameter, "xx", from 00-99, which controls the intensity of the
-                    effect.<br />Some effects have 2 parameters,
-                    written as "xy", these are instead in hexadecimal, from 00-FF to offer greater range for a single
-                    digit.
+                    effect.<br />Some effects have 2 parameters, written as "xy", these are instead in hexadecimal, from
+                    00-FF to offer greater range for a single digit.
                 </p>
                 <p>Below is a list of all the effects in WaveTracker</p>
                 <br />
@@ -56,9 +54,9 @@
                         </td>
                         <td>
                             Cycles through notes in a chord every tick, with base + <span class="fxp">x</span> and base
-                            + <span class="fxp">y</span> semitones.
-                            Use <span class="fx">0</span><span class="fxp">00</span> to disable.<br />For example: <span
-                                class="fx">0</span><span class="fxp">47</span> defines a major chord<br />
+                            + <span class="fxp">y</span> semitones. Use <span class="fx">0</span
+                            ><span class="fxp">00</span> to disable.<br />For example: <span class="fx">0</span
+                            ><span class="fxp">47</span> defines a major chord<br />
                         </td>
                     </tr>
                     <tr>
@@ -67,9 +65,8 @@
                             <span class="parameterHint">(speed)</span>
                         </td>
                         <td>
-                            Continuously increase the pitch at speed <span class="fxp">xx</span>. Use <span
-                                class="fx">1</span><span class="fxp">00</span> to
-                            disable<br />
+                            Continuously increase the pitch at speed <span class="fxp">xx</span>. Use
+                            <span class="fx">1</span><span class="fxp">00</span> to disable<br />
                         </td>
                     </tr>
                     <tr>
@@ -78,9 +75,8 @@
                             <span class="parameterHint">(speed)</span>
                         </td>
                         <td>
-                            Continuously decrease the pitch at speed <span class="fxp">xx</span>. Use <span
-                                class="fx">2</span><span class="fxp">00</span> to
-                            disable<br />
+                            Continuously decrease the pitch at speed <span class="fxp">xx</span>. Use
+                            <span class="fx">2</span><span class="fxp">00</span> to disable<br />
                         </td>
                     </tr>
                     <tr>
@@ -89,9 +85,8 @@
                             <span class="parameterHint">(speed)</span>
                         </td>
                         <td>
-                            Automatically glide between notes at speed <span class="fxp">xx</span>. Use <span
-                                class="fx">3</span><span class="fxp">00</span> to
-                            disable<br />
+                            Automatically glide between notes at speed <span class="fxp">xx</span>. Use
+                            <span class="fx">3</span><span class="fxp">00</span> to disable<br />
                         </td>
                     </tr>
                     <tr>
@@ -121,8 +116,8 @@
                         </td>
                         <td>
                             Sets the stereo panning of the channel with position <span class="fxp">xx</span>.
-                            <br /><span class="fxp">00</span> is 100% left
-                            <br /><span class="fxp">50</span> is center<br />
+                            <br /><span class="fxp">00</span> is 100% left <br /><span class="fxp">50</span> is
+                            center<br />
                             <span class="fxp">99</span> is 100% right
                         </td>
                     </tr>
@@ -133,8 +128,8 @@
                         </td>
                         <td>
                             Artificially widens the channel in the stereo field by offsetting the phase of one side
-                            <span class="fxp">xx</span> percent. Use <span class="fx">9</span><span
-                                class="fxp">00</span> to disable.<br />
+                            <span class="fxp">xx</span> percent. Use <span class="fx">9</span
+                            ><span class="fxp">00</span> to disable.<br />
                         </td>
                     </tr>
                     <tr>
@@ -142,15 +137,18 @@
                             <span class="fx">A</span><span class="fxp">xx</span> - Volume fade down<br />
                             <span class="parameterHint">(speed)</span>
                         </td>
-                        <td>Continuously decreases the channel volume by <span class="fxp">xx</span> steps every
-                            tick.<br /></td>
+                        <td>
+                            Continuously decreases the channel volume by <span class="fxp">xx</span> steps every
+                            tick.<br />
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <span class="fx">W</span><span class="fxp">xx</span> - Volume fade up<br />
                             <span class="parameterHint">(speed)</span>
                         </td>
-                        <td>Continuously increases the channel volume by <span class="fxp">xx</span> steps every tick.
+                        <td>
+                            Continuously increases the channel volume by <span class="fxp">xx</span> steps every tick.
                         </td>
                     </tr>
                     <tr>
@@ -189,55 +187,76 @@
                         <td>Delays the channel's row by <span class="fxp">xx</span> ticks.</td>
                     </tr>
                     <tr>
-                        <td><span class="fx">I</span><span class="fxp">xx</span> - Wave blend <br /><span
-                                class="parameterHint">(blend amount)</span></td>
+                        <td>
+                            <span class="fx">I</span><span class="fxp">xx</span> - Wave blend <br /><span
+                                class="parameterHint"
+                                >(blend amount)</span
+                            >
+                        </td>
                         <td>
                             Blends the channel's wave with the next wave in the wave bank. <span class="fxp">xx</span>
-                            controls the amount to blend in. 00 is
-                            the original wave, 99 is the next wave
+                            controls the amount to blend in. 00 is the original wave, 99 is the next wave
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="fx">J</span><span class="fxp">xx</span> - Wave stretch <br /><span
-                                class="parameterHint">(stretch amount)</span></td>
+                        <td>
+                            <span class="fx">J</span><span class="fxp">xx</span> - Wave stretch <br /><span
+                                class="parameterHint"
+                                >(stretch amount)</span
+                            >
+                        </td>
                         <td>
                             Stretches the shape of the channel's wave from the edges inwards. Acts a bit like a
                             pulse-width modulator. <span class="fxp">xx</span> controls the amount to stretch.
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="fx">M</span><span class="fxp">xx</span> - Wave FM <br /><span
-                                class="parameterHint">(intensity)</span></td>
+                        <td>
+                            <span class="fx">M</span><span class="fxp">xx</span> - Wave FM <br /><span
+                                class="parameterHint"
+                                >(intensity)</span
+                            >
+                        </td>
                         <td>Frequency modulation. Modulates the channel's wave by the next wave in the wave bank.</td>
                     </tr>
                     <tr>
-                        <td><span class="fx">K</span><span class="fxp">xx</span> - Wave Sync <br /><span
-                                class="parameterHint">(intensity)</span></td>
-                        <td>Resets the phase of the channel's wave periodically during the wave's cycle.</td>
+                        <td>
+                            <span class="fx">K</span><span class="fxp">xx</span> - Wave Sync <br /><span
+                                class="parameterHint"
+                                >(intensity)</span
+                            >
+                        </td>
+                        <td>Increases the speed of the channel's wave during the wave's cycle</td>
                     </tr>
                     <tr>
                         <td>
                             <span class="fx">P</span><span class="fxp">xx</span> - Fine pitch<br />
                             <span class="parameterHint">(offset)</span>
                         </td>
-                        <td>Detunes the current channel. Default is <span class="fx">P</span><span
-                                class="fxp">50</span>.</td>
+                        <td>
+                            Detunes the current channel. Default is <span class="fx">P</span
+                            ><span class="fxp">50</span>.
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <span class="fx">Q</span><span class="fxp">xy</span> - Note bend up<br />
                             <span class="parameterHint">(speed, semitones)</span>
                         </td>
-                        <td>Bends the current note up by <span class="fxp">y</span> semitones at speed <span
-                                class="fxp">x</span>.</td>
+                        <td>
+                            Bends the current note up by <span class="fxp">y</span> semitones at speed
+                            <span class="fxp">x</span>.
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <span class="fx">R</span><span class="fxp">xy</span> - Note bend down<br />
                             <span class="parameterHint">(speed, semitones)</span>
                         </td>
-                        <td>Bends the current note down by <span class="fxp">y</span> semitones at speed <span
-                                class="fxp">x</span>.</td>
+                        <td>
+                            Bends the current note down by <span class="fxp">y</span> semitones at speed
+                            <span class="fxp">x</span>.
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -247,15 +266,25 @@
                         <td>Cuts the note after <span class="fxp">xx</span> ticks have passed.</td>
                     </tr>
                     <tr>
-                        <td><span class="fx">V</span><span class="fxp">xx</span> - Set wave <br /><span
-                                class="parameterHint">(wave #)</span></td>
+                        <td>
+                            <span class="fx">V</span><span class="fxp">xx</span> - Set wave <br /><span
+                                class="parameterHint"
+                                >(wave #)</span
+                            >
+                        </td>
                         <td>Sets the channel's timbre to wave <span class="fxp">xx</span> in the wave bank.</td>
                     </tr>
                     <tr>
-                        <td><span class="fx">X</span><span class="fxp">xx</span> - Downsample <br /><span
-                                class="parameterHint">(intensity)</span></td>
-                        <td>Downsamples the channels output by a factor of <span class="fxp">xx</span>. Results in a
-                            lo-fi, bitcrushed sound</td>
+                        <td>
+                            <span class="fx">X</span><span class="fxp">xx</span> - Downsample <br /><span
+                                class="parameterHint"
+                                >(intensity)</span
+                            >
+                        </td>
+                        <td>
+                            Downsamples the channels output by a factor of <span class="fxp">xx</span>. Results in a
+                            lo-fi, bitcrushed sound
+                        </td>
                     </tr>
                 </table>
 
@@ -267,7 +296,5 @@
                 </footer>
             </article>
         </body>
-
     </html>
-
 </html>

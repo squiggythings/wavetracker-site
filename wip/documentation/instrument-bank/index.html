@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Instrument Editor - WaveTracker</title>
             <base href="../" />
@@ -13,22 +12,22 @@
         <body>
             <aside>
                 <ul class="sideNav">
-                    <li> <h2>General</h2> </li>
-                    <a href=""> <li>Overview</li> </a>
-                    <li> <h2>Interface</h2> </li>
+                    <li><h2>General</h2></li>
+                    <a href=""><li>Overview</li></a>
+                    <li><h2>Interface</h2></li>
                     <a href="toolbar/"><li>Toolbar</li></a>
-                    <a href="song-panel/"><li>Song Panel</li></a>
-                    <a href="edit-settings/"> <li>Edit Settings</li> </a>
-                    <a href="frames-panel/"> <li>Frames Panel</li> </a>
-                    <a href="wave-bank/"> <li>Wave Bank</li> </a>
-                    <a class="selected" href="instrument-bank/"> <li>Instrument Bank</li> </a>
-                    <a href="instrument-editor/"> <li>Instrument Editor</li> </a>
-                    <a href="pattern-editor/"> <li>Pattern Editor</li> </a>
-                    <a href="preferences/"> <li>Preferences</li> </a>
-                    <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
-                    <li> <h2>Reference</h2> </li>
-                    <a href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
-                    <a href="effect-list/"> <li>Effect List</li> </a>
+                    <a href="module-panel/"><li>Module Panel</li></a>
+                    <a href="edit-settings/"><li>Edit Settings</li></a>
+                    <a href="frames-panel/"><li>Frames Panel</li></a>
+                    <a href="wave-bank/"><li>Wave Bank</li></a>
+                    <a class="selected" href="instrument-bank/"><li>Instrument Bank</li></a>
+                    <a href="instrument-editor/"><li>Instrument Editor</li></a>
+                    <a href="pattern-editor/"><li>Pattern Editor</li></a>
+                    <a href="preferences/"><li>Preferences</li></a>
+                    <a href="visualizer-mode/"><li>Visualizer Mode</li></a>
+                    <li><h2>Reference</h2></li>
+                    <a href="keyboard-shortcuts/"><li>Keyboard Shortcuts</li></a>
+                    <a href="effect-list/"><li>Effect List</li></a>
                 </ul>
             </aside>
             <article>
@@ -37,26 +36,92 @@
                 <br />
                 <p>
                     The instrument bank is located at the far right of the main screen, next to the frame editor. It is
-                    where you can create and edit
-                    instruments to use in your song.
+                    where you can create and edit instruments to use in your song.
                 </p>
-                <img src="instrument-bank/instrument_bank.png"
+                <img
+                    src="instrument-bank/instrument_bank.png"
                     title="The instrument bank, with 2 wave instruments and 2 sample instruments"
-                    alt="Image of the instrument bank, with 2 wave instruments and 2 sample instruments" />
+                    alt="Image of the instrument bank, with 2 wave instruments and 2 sample instruments"
+                />
                 <p>
-                    XXXXXXXXXXXXXXXXXX
+                    The instrument editor's toolbar is located at the top of the panel. The buttons are described from
+                    left to right:
                 </p>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 175px">Button</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>New wave instrument</td>
+                        <td>Creates a new wave instrument.</td>
+                    </tr>
+                    <tr>
+                        <td>New sample instrument</td>
+                        <td>Creates a new sample instrument.</td>
+                    </tr>
+                    <tr>
+                        <td>Remove instrument</td>
+                        <td>
+                            Deletes the selected instrument from the module, removing all references to the instrument
+                            in every pattern. There is no undo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Duplicate instrument</td>
+                        <td>Duplicates the selected instrument, inserting the new copy one slot below the original.</td>
+                    </tr>
+                    <tr>
+                        <td>Move down</td>
+                        <td>
+                            Moves the selected instrument down one slot in the bank. This will update all references to
+                            the instrument in the module.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Move up</td>
+                        <td>
+                            Moves the selected instrument up one slot in the bank. This will update all references to
+                            the instrument in the module.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Edit</td>
+                        <td>Opens the <a href="instrument-editor">Instrument Editor</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>Rename</td>
+                        <td>Opens a prompt to rename the currently selected instrument.</td>
+                    </tr>
+                </table>
+                <br />
+                <h2>General</h2>
+                <p>
+                    To select an instrument, either click the instrument's name or use Ctrl+Up or Ctrl+Down to navigate
+                    to the next and previous instruments.
+                </p>
+                <p>
+                    The currently selected instrument in the instrument bank is what will be previewed whenever a note
+                    is pressed on a piano roll. It is also what will be typed into the pattern editor automatically when
+                    inputting a note, (unless "Instrument Mask" is enabled).
+                </p>
+                <br />
+
+                <h2>Editing</h2>
+                <p>
+                    To edit an instrument, you can double click the instrument's name, click the "Edit Instrument"
+                    button in the toolbar, or use Ctrl+I to open the <a href="instrument-editor">Instrument Editor</a>.
+                </p>
+
                 <br />
 
                 <footer>
                     <hr />
-                    WaveTracker is an open source music software by Elias Ananiadis &middot;
+                    WaveTracker is Copyright © 2024 squiggythings &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>
             </article>
         </body>
-
     </html>
-
 </html>

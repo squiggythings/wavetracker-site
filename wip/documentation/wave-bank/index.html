@@ -11,22 +11,22 @@
         <body>
             <aside>
                 <ul class="sideNav">
-                    <li> <h2>General</h2> </li>
-                    <a href=""> <li>Overview</li> </a>
-                    <li> <h2>Interface</h2> </li>
+                    <li><h2>General</h2></li>
+                    <a href=""><li>Overview</li></a>
+                    <li><h2>Interface</h2></li>
                     <a href="toolbar/"><li>Toolbar</li></a>
-                    <a href="song-panel/"><li>Song Panel</li></a>
-                    <a href="edit-settings/"> <li>Edit Settings</li> </a>
-                    <a href="frames-panel/"> <li>Frames Panel</li> </a>
-                    <a class="selected" href="wave-bank/"> <li>Wave Bank</li> </a>
-                    <a href="instrument-bank/"> <li>Instrument Bank</li> </a>
-                    <a href="instrument-editor/"> <li>Instrument Editor</li> </a>
-                    <a href="pattern-editor/"> <li>Pattern Editor</li> </a>
-                    <a href="preferences/"> <li>Preferences</li> </a>
-                    <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
-                    <li> <h2>Reference</h2> </li>
-                    <a href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
-                    <a href="effect-list/"> <li>Effect List</li> </a>
+                    <a href="module-panel/"><li>Module Panel</li></a>
+                    <a href="edit-settings/"><li>Edit Settings</li></a>
+                    <a href="frames-panel/"><li>Frames Panel</li></a>
+                    <a class="selected" href="wave-bank/"><li>Wave Bank</li></a>
+                    <a href="instrument-bank/"><li>Instrument Bank</li></a>
+                    <a href="instrument-editor/"><li>Instrument Editor</li></a>
+                    <a href="pattern-editor/"><li>Pattern Editor</li></a>
+                    <a href="preferences/"><li>Preferences</li></a>
+                    <a href="visualizer-mode/"><li>Visualizer Mode</li></a>
+                    <li><h2>Reference</h2></li>
+                    <a href="keyboard-shortcuts/"><li>Keyboard Shortcuts</li></a>
+                    <a href="effect-list/"><li>Effect List</li></a>
                 </ul>
             </aside>
             <article>
@@ -37,11 +37,12 @@
                 <img
                     src="wave-bank/default_wave_bank.png"
                     title="The default wave bank panel, with 100 different waves"
-                    alt="Image of the wave bank panel" />
-                <p
-                    >There are 100 different wave slots, numbered 00-99, inside the wave bank. Each slot shows a small
-                    preview of what the wave looks like.</p
-                >
+                    alt="Image of the wave bank panel"
+                />
+                <p>
+                    There are 100 different wave slots, numbered 00-99, inside the wave bank. Each slot shows a small
+                    preview of what the wave looks like.
+                </p>
                 <p>In every new song, the first six will be filled in with presets by default.</p>
                 <br />
                 <h2 class="topic">Wave Editor</h2>
@@ -49,7 +50,8 @@
                 <img
                     src="wave-bank/wave_editor.png"
                     title="The wave editor panel, editing a sine wave"
-                    alt="Image of the wave editor window" />
+                    alt="Image of the wave editor window"
+                />
                 <p>
                     This window allows you to change qualities of the currently selected wave. Pushing the left or right
                     arrow keys will cycle through the waves in the bank, so you can easily switch between editing
@@ -88,15 +90,21 @@
                     </tr>
                     <tr>
                         <td>Paste</td>
-                        <td>Pastes the wave copied to the internal clipboard.</td>
+                        <td>Pastes the wave copied.</td>
                     </tr>
                     <tr>
                         <td>Phase ></td>
-                        <td>Moves all points in the wave one space to the right, eventually looping back around.</td>
+                        <td>
+                            Moves all points in the wave one space to the right, with the last looping back to the
+                            front.
+                        </td>
                     </tr>
                     <tr>
                         <td>Phase &lt;</td>
-                        <td>Moves all points in the wave one space to the left, eventually looping back around.</td>
+                        <td>
+                            Moves all points in the wave one space to the left, with the first looping around to the
+                            back.
+                        </td>
                     </tr>
                     <tr>
                         <td>Shift up</td>
@@ -108,14 +116,7 @@
                     </tr>
                     <tr>
                         <td>Invert</td>
-                        <td>Flips the polarity of the wave. High amplitudes become low amplitudes and vice versa.</td>
-                    </tr>
-                    <tr>
-                        <td>Smooth</td>
-                        <td>
-                            Attempts to round out any sharp corners in the wave. This will make the sound darker and
-                            less bright. Clicking repeatedly will further smooth the wave.
-                        </td>
+                        <td>Flips the polarity of the wave.</td>
                     </tr>
                     <tr>
                         <td>Mutate</td>
@@ -132,12 +133,48 @@
                         </td>
                     </tr>
                 </table>
+                <h4>Wave Modifications</h4>
+                <p>
+                    The modify button offers a selection of more advanced operations to perform on the wave. These will
+                    open a special dialog to adjust and preview settings before applying them.
+                </p>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 100px">Tool</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Smooth</td>
+                        <td>
+                            Smooths out sharp corners in the wave. 'Window Size' controls the coarseness of the
+                            smoothing. 'Amount' controls how much smoothing to apply.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Add fuzz</td>
+                        <td>Pastes the wave copied.</td>
+                    </tr>
+                    <tr>
+                        <td>Sync</td>
+                        <td>
+                            Moves all points in the wave one space to the right, with the last looping back to the
+                            front.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample and hold</td>
+                        <td>
+                            Moves all points in the wave one space to the right, with the last looping back to the
+                            front.
+                        </td>
+                    </tr>
+                </table>
                 <br />
                 <h4>Resampling Filter</h4>
-                <p
-                    >Each wave can use one of 3 different resampling modes, which affects how the wave sounds in
-                    different registers.</p
-                >
+                <p>
+                    Each wave can use one of 3 different resampling modes, which affects how the wave sounds in
+                    different registers.
+                </p>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
                         <th style="width: 180px">Resampling Mode</th>
@@ -145,10 +182,10 @@
                     </tr>
                     <tr>
                         <td>Harsh</td>
-                        <td
-                            >No interpolation, uses nearest neighbor resampling. This gives a very harsh and aliased
-                            sound. Good for square and pulse waves.</td
-                        >
+                        <td>
+                            No interpolation, uses nearest neighbor resampling. This gives a very harsh and aliased
+                            sound. Good for square and pulse waves.
+                        </td>
                     </tr>
                     <tr>
                         <td>Smooth</td>
@@ -170,7 +207,7 @@
                 <br />
                 <footer>
                     <hr />
-                    WaveTracker is an open source music software by Elias Ananiadis &middot;
+                    WaveTracker is Copyright © 2024 squiggythings &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <html lang="en">
-
         <head>
             <title>Instrument Editor - WaveTracker</title>
             <base href="../" />
@@ -13,48 +12,137 @@
         <body>
             <aside>
                 <ul class="sideNav">
-                    <li> <h2>General</h2> </li>
-                    <a href=""> <li>Overview</li> </a>
-                    <li> <h2>Interface</h2> </li>
+                    <li><h2>General</h2></li>
+                    <a href=""><li>Overview</li></a>
+                    <li><h2>Interface</h2></li>
                     <a href="toolbar/"><li>Toolbar</li></a>
-                    <a href="song-panel/"><li>Song Panel</li></a>
-                    <a href="edit-settings/"> <li>Edit Settings</li> </a>
-                    <a href="frames-panel/"> <li>Frames Panel</li> </a>
-                    <a href="wave-bank/"> <li>Wave Bank</li> </a>
-                    <a href="instrument-bank/"> <li>Instrument Bank</li> </a>
-                    <a class="selected" href="instrument-editor/"> <li>Instrument Editor</li> </a>
-                    <a href="pattern-editor/"> <li>Pattern Editor</li> </a>
-                    <a href="preferences/"> <li>Preferences</li> </a>
-                    <a href="visualizer-mode/"> <li>Visualizer Mode</li> </a>
-                    <li> <h2>Reference</h2> </li>
-                    <a href="keyboard-shortcuts/"> <li>Keyboard Shortcuts</li> </a>
-                    <a href="effect-list/"> <li>Effect List</li> </a>
+                    <a href="module-panel/"><li>Module Panel</li></a>
+                    <a href="edit-settings/"><li>Edit Settings</li></a>
+                    <a href="frames-panel/"><li>Frames Panel</li></a>
+                    <a href="wave-bank/"><li>Wave Bank</li></a>
+                    <a href="instrument-bank/"><li>Instrument Bank</li></a>
+                    <a class="selected" href="instrument-editor/"><li>Instrument Editor</li></a>
+                    <a href="pattern-editor/"><li>Pattern Editor</li></a>
+                    <a href="preferences/"><li>Preferences</li></a>
+                    <a href="visualizer-mode/"><li>Visualizer Mode</li></a>
+                    <li><h2>Reference</h2></li>
+                    <a href="keyboard-shortcuts/"><li>Keyboard Shortcuts</li></a>
+                    <a href="effect-list/"><li>Effect List</li></a>
                 </ul>
             </aside>
             <article>
                 <h1 class="topic">Instrument Editor</h1>
                 <hr />
                 <br />
+                <p>The instrument editor is where</p>
+                <br />
+                <h2>Wave and Sample Instruments</h2>
                 <p>
-                    The instrument editor 
+                    There are two types of instruments in WaveTracker, wave and sample instruments. Wave instruments
+                    play and manipulate waves from the <a href="wave-bank">Wave Bank</a>, while sample instruments play
+                    back an audio clip.
                 </p>
-                <img src="instrument-editor/envelope_editor.png"
+                <p>
+                    Wave instruments hold only envelopes, while Sample instruments have both a sample, and envelopes
+                    tab. Although, wave instruments have a few more envelope options than sample instruments.
+                </p>
+                <br />
+                <h2>Envelope Editor</h2>
+                <p>Envelopes are sequences that control elements of the instrument's sound over time.</p>
+                <img
+                    src="instrument-editor/envelope_editor.png"
                     title="The instrument editor, editing a volume envelope"
-                    alt="Image of the instrument editor, editing a volume envelope" />
-                <img src="sample-editor/envelope_editor.png"
+                    alt="Image of the instrument editor, editing a volume envelope"
+                />
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 160px">Envelope Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 300px; font-weight: bold; border-right: 0px">Wave & Sample instruments</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Volume</td>
+                        <td>Controls the channel's volume.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Arpeggio</td>
+                        <td>Allows you to define arpeggios by offsetting the channel's current note.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Pitch</td>
+                        <td>
+                            Controls pitch slides, each step in the envelope raises or lowers the pitch of the channel.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 300px; font-weight: bold; border-right: 0px">Wave instruments only</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wave</td>
+                        <td>Sets the wave of the channel from the wave bank.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wave Blend</td>
+                        <td>Blends the current channels wave with the next one in the wave bank.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wave Stretch</td>
+                        <td>
+                            Stretches the channel's current wave from the center outwards for a kind of pulse width
+                            modulation effect.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wave FM</td>
+                        <td>
+                            Performs frequency modulation using the channel's current wave as the carrier and the next
+                            wave in the wave bank as the modulator.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wave Sync</td>
+                        <td>Increases the speed of the channel's wave during the wave's cycle.</td>
+                    </tr>
+                </table>
+                <br />
+                <h3>Editing</h3>
+                <p>
+                    To create an envelope, first add the envelope to the instrument's envelopes list. Then set the
+                    length of the envelope with the Length control. Draw the envelope's contour in the grid, by clicking
+                    and dragging. Hold Shift while clicking to draw straight lines.
+                </p>
+                <br />
+                <h3>Loop and Release</h3>
+                <p>
+                    The two ribbons at the top of the envelope editor are where you can set flags for loop points and
+                    release points in the envelope. To add a flag, click any point along the ribbon where the flag
+                    should be. To remove it, click again in the same spot.
+                </p>
+                <p>
+                    If the envelope has a release, the envelope will play up until the release point, and wait there
+                    until a Note Release (===) is triggered from the pattern editor. If the envelope has a loop point
+                    before a release point, it will loop that section until the envelope is released. If the loop point
+                    is afterwards, it will loop that portion indefinitely.
+                </p>
+                <br />
+                <h2>Sample Editor</h2>
+                <img
+                    src="instrument-editor/sample_editor.png"
                     title="The instrument editor, editing a volume envelope"
-                    alt="Image of the instrument editor, editing a volume envelope" />
+                    alt="Image of the instrument editor, editing a volume envelope"
+                />
+                <p></p>
                 <br />
 
                 <footer>
                     <hr />
-                    WaveTracker is an open source music software by Elias Ananiadis &middot;
+                    WaveTracker is Copyright © 2024 squiggythings &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>
             </article>
         </body>
-
     </html>
-
 </html>
