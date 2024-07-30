@@ -81,7 +81,7 @@
                 </p>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
-                        <th style="width: 100px">Tool</th>
+                        <th style="width: 150px">Tool</th>
                         <th>Description</th>
                     </tr>
                     <tr>
@@ -140,7 +140,7 @@
                 </p>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
-                        <th style="width: 100px">Tool</th>
+                        <th style="width: 150px">Tool</th>
                         <th>Description</th>
                     </tr>
                     <tr>
@@ -152,20 +152,21 @@
                     </tr>
                     <tr>
                         <td>Add fuzz</td>
-                        <td>Pastes the wave copied.</td>
+                        <td>
+                            Adds a random offset to each point for a brighter tone. 'Amount' controls how much to add.
+                            'Wrap around' will make points move back towards the center if they reach the maximum or
+                            minimum of the window
+                        </td>
                     </tr>
                     <tr>
                         <td>Sync</td>
-                        <td>
-                            Moves all points in the wave one space to the right, with the last looping back to the
-                            front.
-                        </td>
+                        <td>Repeats the wave inside itself. 'Harmonic' controls how many times to repeat.</td>
                     </tr>
                     <tr>
                         <td>Sample and hold</td>
                         <td>
-                            Moves all points in the wave one space to the right, with the last looping back to the
-                            front.
+                            Basic downsample effect, turns the wave into a more staircased pattern. 'Hold length'
+                            controls how long each step is.
                         </td>
                     </tr>
                 </table>
@@ -177,33 +178,35 @@
                 </p>
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
-                        <th style="width: 180px">Resampling Mode</th>
+                        <th style="width: 150px">Resampling Mode</th>
                         <th>Description</th>
                     </tr>
                     <tr>
                         <td>Harsh</td>
                         <td>
-                            No interpolation, uses nearest neighbor resampling. This gives a very harsh and aliased
-                            sound. Good for square and pulse waves.
+                            No interpolation, uses nearest neighbor resampling. This gives a very bright and digital
+                            sound.
                         </td>
                     </tr>
                     <tr>
                         <td>Smooth</td>
-                        <td>
-                            Linear interpolation. This gives a very smooth sound. Good for sine and triangle waves, but
-                            can dull out squares and sawtooths, especially at lower notes.
-                        </td>
+                        <td>Linear interpolation. This gives a smoother, darker sound.</td>
                     </tr>
                     <tr>
                         <td>Mix</td>
                         <td>
-                            An mix between the harsh and smooth modes. Provides a compromise that has will make smoother
+                            An mix between the harsh and smooth modes. Provides a compromise that has will make sloped
                             sections of the wave smoother, while preserving the clarity of the sharper portions at low
                             frequencies. This is the default option for any new waves, unless otherwise changed in
                             preferences.
                         </td>
                     </tr>
                 </table>
+                <br />
+                <p>
+                    To see how each resampling mode affects the wave's output, right click on the draw area and select
+                    'Show as line'.
+                </p>
                 <br />
                 <footer>
                     <hr />

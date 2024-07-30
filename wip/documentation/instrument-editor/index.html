@@ -48,11 +48,16 @@
                 </p>
                 <br />
                 <h2>Envelope Editor</h2>
-                <p>Envelopes are sequences that control elements of the instrument's sound over time.</p>
+                <p>
+                    Envelopes are sequences that control elements of the instrument's sound over time. There are 3
+                    envelope types instruments can have, and an additional 5 wave-specific envelopes available for wave
+                    instruments.
+                </p>
+
                 <img
                     src="instrument-editor/envelope_editor.png"
-                    title="The instrument editor, editing a volume envelope"
-                    alt="Image of the instrument editor, editing a volume envelope"
+                    title="The envelope editor, editing a volume envelope"
+                    alt="Image of the envelope editor, editing a volume envelope"
                 />
                 <table border="1" cellpadding="3px" class="panel">
                     <tr valign="top">
@@ -103,22 +108,28 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Wave Sync</td>
-                        <td>Increases the speed of the channel's wave during the wave's cycle.</td>
+                        <td>Repeats the channel's wave multiple times during the wave's cycle.</td>
                     </tr>
                 </table>
                 <br />
                 <h3>Editing</h3>
                 <p>
-                    To create an envelope, first add the envelope to the instrument's envelopes list. Then set the
-                    length of the envelope with the Length control. Draw the envelope's contour in the grid, by clicking
-                    and dragging. Hold Shift while clicking to draw straight lines.
+                    Envelopes can be added by selecting them from the 'Add Envelope' button. To delete the envelope,
+                    click the 'X' to the right of the envelope's name. Toggle the switch to the left side of the
+                    envelope to temporarily enable/bypass the envelope.
                 </p>
+                <p>
+                    To edit an envelope, first set the length of the envelope with the Length control, then draw the
+                    envelope's contour in the grid, by clicking and dragging. Hold Shift while drawing to create
+                    straight lines. Envelopes can also be typed in manually via the text box below the draw area.
+                </p>
+
                 <br />
                 <h3>Loop and Release</h3>
                 <p>
                     The two ribbons at the top of the envelope editor are where you can set flags for loop points and
                     release points in the envelope. To add a flag, click any point along the ribbon where the flag
-                    should be. To remove it, click again in the same spot.
+                    should be. Click the point again to remove it.
                 </p>
                 <p>
                     If the envelope has a release, the envelope will play up until the release point, and wait there
@@ -126,14 +137,17 @@
                     before a release point, it will loop that section until the envelope is released. If the loop point
                     is afterwards, it will loop that portion indefinitely.
                 </p>
+                <p>Loops and releases are represented in the envelope text box as '|' and '/', respectively.</p>
                 <br />
                 <h2>Sample Editor</h2>
+                <p>The sample editor allows the import of any .wav, .flac or .mp3 file into an instrument.</p>
+
                 <img
                     src="instrument-editor/sample_editor.png"
-                    title="The instrument editor, editing a volume envelope"
-                    alt="Image of the instrument editor, editing a volume envelope"
+                    title="The sample editor, editing a kick drum sample"
+                    alt="Image of the sample editor, editing a kick drum sample"
                 />
-                <p></p>
+                <p>T</p>
                 <br />
 
                 <footer>
