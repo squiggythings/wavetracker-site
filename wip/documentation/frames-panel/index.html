@@ -34,22 +34,32 @@
                 <h1 class="topic">Frames Panel</h1>
                 <hr />
                 <br />
-                <p>The frames panel is located at the top left of the main screen, below the "Song" panel.</p>
+                <p>
+                    The frames panel is located at the top left of the main screen, below the
+                    <a href="module-panel">module panel</a>.
+                </p>
                 <img
                     src="frames-panel/frames_panel.png"
                     title="The frames panel, showing 4 frames in the song. Frame 01 is currently selected."
                     alt="The frames panel, showing 4 frames in the song. Frame 01 is currently selected."
                 />
                 <p>
-                    Frames are a series of rows, which can hold instructions for each channel. During playback, the song
+                    Frames are a sequence of patterns that describes the order of the song. During playback, the song
                     will play through a frame one row at a time, then move on to the next frame in the sequence, and so
-                    on. They can be considered as ways to divide your song into sections or chunks.
+                    on. Each square in the sequence represents one frame. The number inside the square is the pattern,
+                    the number above the square is the frame's order in the sequence.
                 </p>
                 <p>
-                    The large space to the right shows a list of all frames in the song, with the frame currently being
-                    edited highlighted in blue. Clicking the plus sign at the end of the frame list will add a new frame
-                    to the end of the song. Clicking a frame will navigate to editing that frame, and using the scroll
-                    wheel while hovered over this space will navigate forwards and backwards through frames.
+                    The frame currently being edited will be highlighted in blue. Clicking the plus sign at the end of
+                    the frame list will add a new frame to the end of the song. Clicking a frame will navigate to
+                    editing that frame, and using the scroll wheel while hovered over this space will navigate forwards
+                    and backwards through frames.
+                </p>
+                <p>
+                    Patterns can be reused across multiple frames for easy repetition. When creating a new frame, it
+                    will automatically hold the next empty pattern. To change a frame's pattern, hover over the frame,
+                    and either drag up and down, or hold shift and scroll up or down. A frame's pattern can also be set
+                    manually by right clicking the frame and selecting 'Set pattern...'
                 </p>
                 <p>
                     The small toolbar at the right allows simple functions for inserting a new frame, deleting the
@@ -59,7 +69,7 @@
                 <br />
                 <footer>
                     <hr />
-                    WaveTracker is Copyright © 2024 squiggythings &middot;
+                    WaveTracker is Copyright © 2024 Elias Ananiadis &middot;
                     <a href="https://github.com/squiggythings/WaveTracker">Source code</a> &middot;
                     <a href="https://eliasananiadis.com">Personal site</a>
                 </footer>

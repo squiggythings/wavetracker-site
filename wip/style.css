@@ -78,6 +78,7 @@ p {
     /* text-align: center; */
     font-size: 0.9em;
 }
+
 nav {
     margin: auto;
 }
@@ -128,6 +129,8 @@ div.image_wrapper img {
     margin: auto;
     padding: 0;
     width: 400px;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 div.image_wrapper p {
