@@ -188,10 +188,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">I</span><span class="fxp">xx</span> - Wave blend <br /><span
-                                class="parameterHint"
-                                >(blend amount)</span
-                            >
+                            <span class="fx">I</span><span class="fxp">xx</span> - Wave blend <br />
+                            <span class="parameterHint">(blend amount)</span>
                         </td>
                         <td>
                             Blends the channel's wave with the next wave in the wave bank. <span class="fxp">xx</span>
@@ -200,10 +198,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">J</span><span class="fxp">xx</span> - Wave stretch <br /><span
-                                class="parameterHint"
-                                >(stretch amount)</span
-                            >
+                            <span class="fx">J</span><span class="fxp">xx</span> - Wave stretch <br />
+                            <span class="parameterHint">(stretch amount)</span>
                         </td>
                         <td>
                             Stretches the shape of the channel's wave from the edges inwards. Acts a bit like a
@@ -212,19 +208,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">M</span><span class="fxp">xx</span> - Wave FM <br /><span
-                                class="parameterHint"
-                                >(intensity)</span
-                            >
+                            <span class="fx">M</span><span class="fxp">xx</span> - Wave FM <br />
+                            <span class="parameterHint">(intensity)</span>
                         </td>
                         <td>Frequency modulation. Modulates the channel's wave by the next wave in the wave bank.</td>
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">K</span><span class="fxp">xx</span> - Wave Sync <br /><span
-                                class="parameterHint"
-                                >(intensity)</span
-                            >
+                            <span class="fx">K</span><span class="fxp">xx</span> - Wave Sync <br />
+                            <span class="parameterHint">(intensity)</span>
                         </td>
                         <td>Increases the speed of the channel's wave during the wave's cycle</td>
                     </tr>
@@ -267,23 +259,32 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">V</span><span class="fxp">xx</span> - Set wave <br /><span
-                                class="parameterHint"
-                                >(wave #)</span
-                            >
+                            <span class="fx">V</span><span class="fxp">xx</span> - Set wave <br />
+                            <span class="parameterHint">(wave #)</span>
                         </td>
                         <td>Sets the channel's timbre to wave <span class="fxp">xx</span> in the wave bank.</td>
                     </tr>
                     <tr>
                         <td>
-                            <span class="fx">X</span><span class="fxp">xx</span> - Downsample <br /><span
-                                class="parameterHint"
-                                >(intensity)</span
-                            >
+                            <span class="fx">X</span><span class="fxp">xx</span> - Downsample <br />
+                            <span class="parameterHint">(intensity)</span>
                         </td>
                         <td>
-                            Downsamples the channels output by a factor of <span class="fxp">xx</span>. Results in a
+                            Downsamples the channel's output by a factor of <span class="fxp">xx</span>. Results in a
                             lo-fi, bitcrushed sound
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="fx">H</span><span class="fxp">xy</span> - Channel Filter <br />
+                            <span class="parameterHint">(cutoff, resonance)</span>
+                        </td>
+                        <td>
+                            Applies a low pass filter on the output of the channel.<br /><span class="fxp">x</span>
+                            controls the filter cutoff from 0-F, with 0 being completely open, and F being the most
+                            muted.<br />
+                            <span class="fxp">y</span> controls the resonance of the filter cutoff point. <br />Use
+                            <span class="fx">H</span><span class="fxp">00</span> to disable.<br />
                         </td>
                     </tr>
                 </table>

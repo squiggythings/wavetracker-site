@@ -140,14 +140,168 @@
                 <p>Loops and releases are represented in the envelope text box as '|' and '/', respectively.</p>
                 <br />
                 <h2>Sample Editor</h2>
-                <p>The sample editor allows the import of any .wav, .flac or .mp3 file into an instrument.</p>
+                <p>
+                    The 'Sample' tab is only available on sample instruments. It allows the import of any .wav, .flac or
+                    .mp3 file into an instrument. They can then be used in the pattern and will be repitched to whatever
+                    note is being played.
+                </p>
 
                 <img
                     src="instrument-editor/sample_editor.png"
-                    title="The sample editor, editing a kick drum sample"
-                    alt="Image of the sample editor, editing a kick drum sample"
+                    title="The sample editor, editing an audio sample"
+                    alt="Image of the sample editor, editing an audio sample"
                 />
-                <p>T</p>
+                <p>
+                    Clicking 'Import Sample' will open a file browser dialog, allowing you to navigate to the location
+                    of the file you would like to sample. Choosing a file will load it into the sample editor.
+                </p>
+
+                <p>Above the sample editor is the length of the audio, in digital audio samples, and in seconds.</p>
+                <p>Below the sample are some settings specific to the sample.</p>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 160px">Setting</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>Base key</td>
+                        <td>
+                            Use this to transpose the sample up or down so that the note played matches the note heard.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fine tune</td>
+                        <td>Detunes the sample up or down in cents.</td>
+                    </tr>
+                    <tr>
+                        <td>Loop mode</td>
+                        <td>
+                            Defines how the sample should loop, if at all:
+                            <ul style="margin: 0">
+                                <li>
+                                    <span style="font-weight: bold">One-shot:</span> The sample does not loop, playback
+                                    stops at the end of the sample.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Forward:</span> When playback reaches the end of the
+                                    sample, it loops back to the loop point.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Ping-pong:</span> When playback reaches the end of
+                                    the sample, it plays in reverse until the loop point, and then plays forwards again.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Loop position</td>
+                        <td>
+                            This option is only visible when the loop mode is set to
+                            <span style="font-weight: bold">Forward</span> or
+                            <span style="font-weight: bold">Ping-pong</span>. Allows you to set the exact position of
+                            the loop point in digital audio samples. This can be useful to find the nearest
+                            zero-crossing to avoid clicking at the loop point.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Resampling mode</td>
+                        <td>
+                            Defines how the sample should be interpolated when played at different pitches
+                            <ul style="margin: 0">
+                                <li>
+                                    <span style="font-weight: bold">Harsh:</span> No interpolation, uses nearest
+                                    neighbor resampling. This gives a very bright and digital sound.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Smooth:</span> Linear interpolation. This gives a
+                                    smoother, darker sound. This is the default option for any samples unless otherwise
+                                    changed in preferences.
+                                </li>
+                                <li>
+                                    <span style="font-weight: bold">Mix:</span> An average between the harsh and smooth
+                                    modes. Provides a compromise that retains some brightness on the low end with less
+                                    aliasing at the high end.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <h3>Looping</h3>
+                <p>
+                    By default samples are set to the <span style="font-weight: bold">One-shot</span> loop mode. To make
+                    a sample loop at the end, the loop mode needs to be either
+                    <span style="font-weight: bold">Forward</span> or <span style="font-weight: bold">Ping-pong</span>.
+                </p>
+                <p>
+                    When looping is enabled, the looping portion of the sample will be highlighted yellow. The loop
+                    point can be set with the 'Loop position' number box. Below the loop mode dropdown. Alternatively,
+                    an easier way to set the loop point is to Shift+Click the point along the sample where the loop
+                    point should be. This will automatically create a loop point at that location. The loop point can
+                    also be set by right clicking the sample and selecting 'Set loop point'.
+                </p>
+                <br />
+                <h3>Editing</h3>
+                <p>The right-most section of the sample editor contains tools with which to modify the sample:</p>
+                <p>
+                    Regional selections can be made by clicking and dragging over the sample. If a portion of the sample
+                    is highlighted, then the tools will affect only the selected region.
+                </p>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 160px">Tool</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>Normalize</td>
+                        <td>
+                            Makes the sample have maximum amplitude so there is no wasted headroom. By default all
+                            samples are normalized upon import. This can be turned off in Preferences.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reverse</td>
+                        <td>Reverses the sample so that it plays backwards.</td>
+                    </tr>
+                    <tr>
+                        <td>Fade in</td>
+                        <td>Makes the sample gradually get softer until it reaches silence at the very end.</td>
+                    </tr>
+                    <tr>
+                        <td>Fade out</td>
+                        <td>Makes the beginning of the sample silent and gradually become louder.</td>
+                    </tr>
+                    <tr>
+                        <td>Amplify+</td>
+                        <td>
+                            Increases the volume of the sample slightly, will clip any parts of the sample that are
+                            already maximum amplitude.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amplify-</td>
+                        <td>Decreases the volume of the sample slightly.</td>
+                    </tr>
+                    <tr>
+                        <td>Invert</td>
+                        <td>Flips the polarity of the sample</td>
+                    </tr>
+                    <tr>
+                        <td>Cut</td>
+                        <td>
+                            Only available if a region of the sample is selected. Removes the selected portion from the
+                            sample.
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <h3>Saving a sample</h3>
+                <p>
+                    Samples can be exported to the disk by right clicking the sample and selecting 'Save as...' This
+                    will prompt a dialog to choose a location and filename, then save it as a 32-bit .wav file.
+                </p>
                 <br />
 
                 <footer>
