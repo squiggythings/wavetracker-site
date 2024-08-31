@@ -93,7 +93,7 @@ a.button {
     font-weight: bold;
     line-height: 25px;
     font-size: em;
-
+    max-width: 200px;
     border-color: #2f5753;
     text-decoration: none;
     border-style: solid;
