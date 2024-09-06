@@ -52,6 +52,10 @@
                         <td>The pixel scaling of WaveTracker's interface. The default is 200%.</td>
                     </tr>
                     <tr>
+                        <td style="padding-left: 20px">Use high resolution text</td>
+                        <td>Replaces the default stylized text with a more legible font.</td>
+                    </tr>
+                    <tr>
                         <td style="font-weight: bold; border-right: 0px">Metering</td>
                     </tr>
                     <tr>
@@ -316,6 +320,14 @@
                         <td>
                             Higher values will reduce high frequency aliasing artefacts, at the expense of higher CPU
                             usage. Turn this down if audio is stuttering
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Desired latency</td>
+                        <td>
+                            The desired latency of audio output. This is only a request. Lower latencies will be more
+                            responsive but run the risk of audio pops and higher CPU usage. Raise this to a higher value
+                            if you hear audio stutters or glitches.
                         </td>
                     </tr>
                 </table>
