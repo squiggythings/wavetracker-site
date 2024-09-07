@@ -54,7 +54,14 @@ article {
     color: white;
 }
 h1 {
-    background-color: #2b3151;
+    background: linear-gradient(90deg, #00000000, #2b3151, #00000000);
+    margin: 10px 0px;
+    padding: 4px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.25em;
+}
+h1.faq {
     margin: 10px 0px;
     padding: 4px;
     margin-top: 0px;
@@ -62,7 +69,7 @@ h1 {
     font-size: 1.25em;
 }
 h2 {
-    background-color: #2b3151;
+    background: linear-gradient(90deg, #00000000, #2b3151, #00000000);
     margin: 10px 0px;
     text-align: center;
     padding: 4px;
@@ -150,11 +157,33 @@ div.image_wrapper h3 {
     font-size: 1.125em;
 }
 
+div.question {
+    margin-bottom: 30px;
+}
+
+div.question p {
+    margin: 0;
+    padding: 5px;
+    word-spacing: 0.25px;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+div.question h3 {
+    margin: 10px 0px;
+    background: linear-gradient(90deg, #2b3151, #00000000);
+    width: 100%;
+    text-align: left;
+    padding: 6px;
+    margin-bottom: 4px;
+    line-height: 1.25em;
+}
+
 ul {
     text-align: left;
     color: #b4b9d6;
     /* text-align: center; */
     font-size: 0.9em;
     word-spacing: 0.25px;
-    line-height: 1.125em;
+    line-height: 1.25em;
 }
