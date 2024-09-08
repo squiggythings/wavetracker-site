@@ -46,21 +46,23 @@
                 <p>In every new song, the first six will be filled in with presets by default.</p>
                 <br />
                 <h2>How to Use Waves in a Song</h2>
+                <p>There are two ways to use waves in a song:</p>
                 <p>
-                    To switch between waves in the pattern, use the <a href="effect-list/">Vxx effect</a> in a channel's
-                    effect column. For example, using V04 will switch the wave on that channel to wave #04 in the wave
-                    bank. By default, when the song starts, all channels are set to wave #00.
+                    The first, most straight forward way is to use the <a href="effect-list/">Vxx effect</a>. This will
+                    tell a channel to use a specific wave from the wave bank. For example, using V04 will switch the
+                    channel to use wave #04. By default, when the song starts, all channels are set to wave #00. This
+                    method lets you use the same instrument but with different waves.
                 </p>
                 <p>
-                    For more advanced cases, <a href="instrument-editor/">Wave instruments</a> also have a 'Wave
-                    envelope' available on them, which will override the Vxx effect.<br />You can add a wave envelope on
-                    an instrument if you want that instrument to always use a certain wave, or use a sequence of waves
-                    over time. Think of it as a way of automatically calling Vxx effect for you whenever you use the
-                    instrument.
+                    The second, more advanced way, is to create a Wave Envelope inside a
+                    <a href="instrument-editor/">Wave instrument</a>, which will override the Vxx effect whenever the
+                    instrument plays.<br />You can add a wave envelope on an instrument if you want that instrument to
+                    always use a certain wave, or use a sequence of waves over time. Think of it as a way of automating
+                    the Vxx effect for you whenever you use the instrument.
                 </p>
                 <p>
-                    If the instrument does not have a wave envelope, the channel will use whatever wave was set with the
-                    Vxx effect. This allows you to use the same instrument with many different waves.
+                    If the instrument does not have a wave envelope, the channel will use whatever wave was last set
+                    with the Vxx effect.
                 </p>
                 <br />
                 <h2 class="topic">Wave Editor</h2>

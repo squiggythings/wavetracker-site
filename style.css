@@ -66,8 +66,9 @@ h1.faq {
     padding: 4px;
     margin-top: 0px;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 2em;
 }
+
 h2 {
     background: linear-gradient(90deg, #00000000, #2b3151, #00000000);
     margin: 10px 0px;
@@ -171,7 +172,6 @@ div.question p {
 
 div.question h3 {
     margin: 10px 0px;
-    background: linear-gradient(90deg, #2b3151, #00000000);
     width: 100%;
     text-align: left;
     padding: 6px;
