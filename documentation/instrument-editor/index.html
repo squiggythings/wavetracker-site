@@ -20,6 +20,7 @@
                     <a href="edit-settings/"><li>Edit Settings</li></a>
                     <a href="frames-panel/"><li>Frames Panel</li></a>
                     <a href="wave-bank/"><li>Wave Bank</li></a>
+                    <a href="wave-editor/"><li>Wave Editor</li></a>
                     <a href="instrument-bank/"><li>Instrument Bank</li></a>
                     <a class="selected" href="instrument-editor/"><li>Instrument Editor</li></a>
                     <a href="pattern-editor/"><li>Pattern Editor</li></a>
@@ -35,19 +36,26 @@
                 <hr />
                 <br />
                 <p>
-                    The instrument editor is where you can create custom presets that define how a sound behaves. You
+                    The instrument editor is where you can create custom presets that define how a channel behaves. You
                     can then reuse this preset as many times as you like in your song.
                 </p>
-                <br />
-                <h2>Wave and Sample Instruments</h2>
+                <h2>Wave, Noise, and Sample Instruments</h2>
                 <p>
-                    There are two types of instruments in WaveTracker, wave and sample instruments. Wave instruments
-                    play and manipulate waves from the <a href="wave-bank">Wave Bank</a>, while sample instruments play
-                    back an audio clip.
+                    There are three types of instruments in WaveTracker, wave instruments, noise instruments, and sample
+                    instruments.
                 </p>
+                <ul>
+                    <li>Wave instruments play and manipulate waves from the <a href="wave-bank">Wave Bank</a></li>
+                    <li>
+                        Noise instruments play and manipulate white noise, like TV-static. This is useful for creating
+                        simple chiptune percussion.
+                    </li>
+                    <li>Sample instruments play back an audio clip.</li>
+                </ul>
                 <p>
-                    Wave instruments hold only envelopes, while Sample instruments have both a sample, and envelopes
-                    tab. Although, wave instruments have a few more envelope options than sample instruments.
+                    Wave and noise instruments hold only envelopes, while Sample instruments have both a sample, and
+                    envelopes tab. Although, wave instruments have a few more envelope options than noise and sample
+                    instruments.
                 </p>
                 <br />
                 <h2>Envelope Editor</h2>
@@ -68,7 +76,7 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td style="width: 300px; font-weight: bold; border-right: 0px">Wave & Sample instruments</td>
+                        <td style="width: 300px; font-weight: bold; border-right: 0px">All instrument types</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Volume</td>
@@ -246,7 +254,62 @@
                 </p>
                 <br />
                 <h3>Editing</h3>
-                <p>The right-most section of the sample editor contains tools with which to modify the sample:</p>
+                <p>
+                    The right-most section of the sample editor contains editing functions with which to modify the
+                    sample:
+                </p>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 160px">Button</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>Undo</td>
+                        <td>Undo the last action.</td>
+                    </tr>
+                    <tr>
+                        <td>Redo</td>
+                        <td>Redo the last undone action.</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>Removes a selected portion from the sample.</td>
+                    </tr>
+                    <tr>
+                        <td>Zoom in</td>
+                        <td>Zooms in the view of the sample.</td>
+                    </tr>
+                    <tr>
+                        <td>Zoom out</td>
+                        <td>Zooms out the view of the sample.</td>
+                    </tr>
+                    <tr>
+                        <td>Zoom in (vertical)</td>
+                        <td>
+                            Expands the view of the sample vertically, to better see low volume sections of the sample.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zoom out (vertical)</td>
+                        <td>Shrinks the view of the sample vertically.</td>
+                    </tr>
+                    <tr>
+                        <td>Fade in</td>
+                        <td>
+                            Makes the sample or selection gradually get softer until it reaches silence at the very end.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fade out</td>
+                        <td>Makes the beginning of the sample or selection silent, and gradually become louder.</td>
+                    </tr>
+                    <tr>
+                        <td>Reverse</td>
+                        <td>Reverses the sample or selection so that it plays backwards.</td>
+                    </tr>
+                </table>
+                <br />
                 <p>
                     Regional selections can be made by clicking and dragging over the sample. If a portion of the sample
                     is highlighted, then the tools will affect only the selected region.
@@ -256,17 +319,9 @@
                         <th style="width: 160px">Tool</th>
                         <th>Description</th>
                     </tr>
-
                     <tr>
-                        <td>Normalize</td>
-                        <td>
-                            Makes the sample have maximum amplitude so there is no wasted headroom. By default all
-                            samples are normalized upon import. This can be turned off in Preferences.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Reverse</td>
-                        <td>Reverses the sample so that it plays backwards.</td>
+                        <td>Delete</td>
+                        <td>Removes a selected portion from the sample.</td>
                     </tr>
                     <tr>
                         <td>Fade in</td>
@@ -277,26 +332,40 @@
                         <td>Makes the beginning of the sample silent and gradually become louder.</td>
                     </tr>
                     <tr>
-                        <td>Amplify+</td>
-                        <td>
-                            Increases the volume of the sample slightly, will clip any parts of the sample that are
-                            already maximum amplitude.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Amplify-</td>
-                        <td>Decreases the volume of the sample slightly.</td>
+                        <td>Reverse</td>
+                        <td>Reverses the sample so that it plays backwards.</td>
                     </tr>
                     <tr>
                         <td>Invert</td>
                         <td>Flips the polarity of the sample</td>
                     </tr>
                     <tr>
-                        <td>Cut</td>
+                        <td>Normalize</td>
                         <td>
-                            Only available if a region of the sample is selected. Removes the selected portion from the
-                            sample.
+                            Makes the sample have maximum amplitude so there is no wasted headroom. By default all
+                            samples are normalized upon import. This can be turned off in Preferences.
                         </td>
+                    </tr>
+                    <tr>
+                        <td>Remove DC offset</td>
+                        <td>
+                            Centers the sample on the x axis. This can help remove unwanted distortion within the
+                            broader mix.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mix to mono</td>
+                        <td>
+                            Takes a stereo sample and mixes the left and right channels together into one mono channel.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amplify</td>
+                        <td>Change the amplitude of the sample by a certain number of decibels.</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcrusher</td>
+                        <td>Bitcrushes the sample by downsampling it and/or changing the bit depth.</td>
                     </tr>
                 </table>
                 <br />

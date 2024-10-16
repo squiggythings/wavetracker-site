@@ -19,6 +19,7 @@
                     <a href="edit-settings/"><li>Edit Settings</li></a>
                     <a href="frames-panel/"><li>Frames Panel</li></a>
                     <a class="selected" href="wave-bank/"><li>Wave Bank</li></a>
+                    <a href="wave-editor/"><li>Wave Editor</li></a>
                     <a href="instrument-bank/"><li>Instrument Bank</li></a>
                     <a href="instrument-editor/"><li>Instrument Editor</li></a>
                     <a href="pattern-editor/"><li>Pattern Editor</li></a>
@@ -41,9 +42,15 @@
                 />
                 <p>
                     There are 100 different wave slots, numbered 00-99, inside the wave bank. Each slot shows a small
-                    preview of what the wave looks like.
+                    preview of what the wave looks like. In every new song, the first six will be filled in with presets
+                    by default.
                 </p>
-                <p>In every new song, the first six will be filled in with presets by default.</p>
+                <br 
+                <h3>Creating / Editing Waves</h3>
+                <p>
+                    A wave can be edited by clicking its slot in the wave bank, which will open the
+                    <a href="wave-editor">Wave Editor</a>.
+                </p>
                 <br />
                 <h2>How to Use Waves in a Song</h2>
                 <p>There are two ways to use waves in a song:</p>
@@ -63,170 +70,6 @@
                 <p>
                     If the instrument does not have a wave envelope, the channel will use whatever wave was last set
                     with the Vxx effect.
-                </p>
-                <br />
-                <h2 class="topic">Wave Editor</h2>
-                <p>A wave can be edited by clicking its slot in the wave bank, which will open the Wave Editor.</p>
-                <img
-                    src="wave-bank/wave_editor.png"
-                    title="The wave editor panel, editing a sine wave"
-                    alt="Image of the wave editor window"
-                />
-                <p>
-                    This window allows you to change qualities of the currently selected wave. Pushing the left or right
-                    arrow keys will cycle through the waves in the bank, so you can easily switch between editing
-                    different waves.
-                </p>
-                <h4>Draw Wave</h4>
-                <p>
-                    Clicking in this area will allow you to draw any wave shape in a 64x32 box. Holding shift while
-                    doing this will let you draw straight lines. This is useful for creating square, sawtooth or
-                    triangle-like waves with straight edges.
-                </p>
-                <p>
-                    Below is a text box with a string of numbers. These numbers correspond to each sample that describes
-                    the wave, and is a way that the wave can be stored or shared outside of WaveTracker. Double clicking
-                    this will let you edit or copy its contents.
-                </p>
-                <h4>Presets</h4>
-                <p>
-                    There are 8 different presets to choose from. Sine, Triangle, Sawtooth, 50% pulse, 25% pulse, 12.5%
-                    pulse, Randomized, and Clear (Resets the wave to be blank). Clicking any one of these will overwrite
-                    what was in the wave canvas with the preset.
-                </p>
-                <h4>Tools</h4>
-                <p>
-                    These can be used to modify the shape of the wave, or copy and paste from one wave to another. Below
-                    is a moving preview of how the wave looks in motion.
-                </p>
-                <table border="1" cellpadding="3px" class="panel">
-                    <tr valign="top">
-                        <th style="width: 150px">Tool</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Copy</td>
-                        <td>Copies this wave to an internal clipboard.</td>
-                    </tr>
-                    <tr>
-                        <td>Paste</td>
-                        <td>Pastes the wave copied.</td>
-                    </tr>
-                    <tr>
-                        <td>Phase ></td>
-                        <td>
-                            Moves all points in the wave one space to the right, with the last looping back to the
-                            front.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Phase &lt;</td>
-                        <td>
-                            Moves all points in the wave one space to the left, with the first looping around to the
-                            back.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Shift up</td>
-                        <td>Moves all points in the wave one space up, stopping at the top.</td>
-                    </tr>
-                    <tr>
-                        <td>Shift down</td>
-                        <td>Moves all points in the wave one space down, stopping at the bottom.</td>
-                    </tr>
-                    <tr>
-                        <td>Invert</td>
-                        <td>Flips the polarity of the wave.</td>
-                    </tr>
-                    <tr>
-                        <td>Mutate</td>
-                        <td>
-                            Adds slight randomization to the wave, making it sound brighter and altering the timbre.
-                            Clicking repeatedly will further mutate the wave.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Normalize</td>
-                        <td>
-                            Makes the wave have a maximum amplitude, useful if you've smoothed a wave but want to bring
-                            it back to full volume.
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <h4>Wave Modifications</h4>
-                <p>
-                    The modify button offers a selection of more advanced operations to perform on the wave. These will
-                    open a special dialog to adjust and preview settings before applying them.
-                </p>
-                <table border="1" cellpadding="3px" class="panel">
-                    <tr valign="top">
-                        <th style="width: 150px">Tool</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Smooth</td>
-                        <td>
-                            Smooths out sharp corners in the wave. 'Window Size' controls the coarseness of the
-                            smoothing. 'Amount' controls how much smoothing to apply.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Add fuzz</td>
-                        <td>
-                            Adds a random offset to each point for a brighter tone. 'Amount' controls how much to add.
-                            'Wrap around' will make points move back towards the center if they reach the maximum or
-                            minimum of the window
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Sync</td>
-                        <td>Repeats the wave inside itself. 'Harmonic' controls how many times to repeat.</td>
-                    </tr>
-                    <tr>
-                        <td>Sample and hold</td>
-                        <td>
-                            Basic downsample effect, turns the wave into a more staircased pattern. 'Hold length'
-                            controls how long each step is.
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <h4>Resampling Filter</h4>
-                <p>
-                    Each wave can use one of 3 different resampling modes, which affects how the wave sounds in
-                    different registers.
-                </p>
-                <table border="1" cellpadding="3px" class="panel">
-                    <tr valign="top">
-                        <th style="width: 150px">Resampling Mode</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Harsh</td>
-                        <td>
-                            No interpolation, uses nearest neighbor resampling. This gives a very bright and crunchy
-                            digital sound.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Smooth</td>
-                        <td>Linear interpolation. This gives a smoother, darker sound.</td>
-                    </tr>
-                    <tr>
-                        <td>Mix</td>
-                        <td>
-                            A mix between the harsh and smooth modes. Provides a compromise that will make sloped
-                            sections of the wave smoother, while preserving the clarity of the sharper portions at low
-                            frequencies. This is the default option for any new waves, unless otherwise changed in
-                            preferences.
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <p>
-                    To see how each resampling mode affects the wave's output, right click on the draw area and select
-                    'Show as line'.
                 </p>
                 <br />
                 <footer>
